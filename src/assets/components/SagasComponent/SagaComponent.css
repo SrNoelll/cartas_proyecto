@@ -1,0 +1,12 @@
+.sagaHero{
+    width: 100vw;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.z{
+    background-image: url("../../images/z.jpg");
+}
+.logoSaga{
+    width: 400px;
+}

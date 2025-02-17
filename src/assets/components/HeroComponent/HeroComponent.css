@@ -1,0 +1,42 @@
+.hero{
+    z-index: 1;
+    height: 100vh;
+    background-image: url("../../images/hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenidoHero{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+width: 100%;
+}
+@keyframes moverFlecha {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.flecha {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid #feda62;
+    font-size: 2rem;
+    color: #feda62;
+    animation: moverFlecha 2s ease-in-out infinite;
+}

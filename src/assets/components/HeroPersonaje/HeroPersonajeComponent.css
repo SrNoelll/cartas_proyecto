@@ -1,0 +1,9 @@
+.heroPer{
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.heroPer img{
+    height: 300px;
+}
