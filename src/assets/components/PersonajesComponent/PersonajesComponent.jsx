@@ -6,7 +6,6 @@ const PersonajesComponent = () => {
   const [saga, setSaga] = useState("1");
   const [personajesu, setPersonajesu] = useState([]);
   const [url, setUrl] = useState("https://www.dragonballapi.com/dragonball/");
-  const [modalData, setModalData] = useState(null);
 
   const funcionAsn = async () => {
     const response = await fetch(url);
@@ -36,14 +35,6 @@ const PersonajesComponent = () => {
   useEffect(() => {
     funcionAsn();
   }, [url]);
-
-  const handleOpenModal = (personaje) => {
-    setModalData(personaje);
-  };
-
-  const handleCloseModal = () => {
-    setModalData(null);
-  };
 
   const navigate = useNavigate();
   const navegar = () =>{
@@ -92,19 +83,6 @@ const PersonajesComponent = () => {
           </div>
         ))}
       </div>
-
-      {modalData && (
-        <div className="modal-overlay" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close-button" onClick={handleCloseModal}>&times;</span>
-            <h2>{modalData.name}</h2>
-            <img src={modalData.image} alt={modalData.name} className="modal-image" />
-            <p>{modalData.description}</p>
-            <p>Raza: {modalData.race}</p>
-            <p>Planeta: {modalData.planet}</p>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
