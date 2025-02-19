@@ -10,10 +10,18 @@ const HeaderComponent = () => {
     <header>
       <div className='cabecera'>
         <a href="/"><img className='imgCatego' src={logo} alt="" /></a>
-        <a href="/sagas"><img className='imgCatego' src={DB1} alt="" /></a>
-        <a href="/sagas"><img className='imgCatego' src={DBZ} alt="" /></a>
-        <a href="/sagas"><img className='imgCatego' src={DBS} alt="" /></a>
-        <a href="/sagas"><img className='imgCatego' src={DBGT} alt="" /></a>
+        <a href="/sagas" onClick={()=>{
+          sessionStorage.setItem("saga", "DGB")
+        }}><img className='imgCatego' src={DB1} alt="" /></a>
+        <a href="/sagas" onClick={()=>{
+          sessionStorage.setItem("saga", "DGBZ")
+        }}><img className='imgCatego' src={DBZ} alt="" /></a>
+        <a href="/sagas" onClick={()=>{
+          sessionStorage.setItem("saga", "DGBS")
+        }}><img className='imgCatego' src={DBS} alt="" /></a>
+        <a href="/sagas" onClick={()=>{
+          sessionStorage.setItem("saga", "DGBGT")
+        }}><img className='imgCatego' src={DBGT} alt="" /></a>
       </div>
     </header>
   )

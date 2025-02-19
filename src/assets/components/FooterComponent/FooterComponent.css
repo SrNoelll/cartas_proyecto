@@ -1,0 +1,55 @@
+/* Estilos de footer hechos con IA */
+.footer {
+    background-color: #f4b0c1;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-name h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .footer-contact {
+    display: flex;
+    justify-content: center; /* Centra los elementos en el eje horizontal */
+    align-items: center; /* Centra los elementos en el eje vertical */
+    gap: 20px; /* Espacio entre el portfolio y el email */
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .footer-contact a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-socials {
+    margin-top: 15px;
+  }
+  
+  .footer-socials a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-socials a:hover {
+    color: #000;
+  }
+  
+  .footer-socials svg {
+    transition: all 0.3s ease;
+  }
+  
+  .footer-socials a:hover svg {
+    transform: scale(1.2);
+  }
+  

@@ -3,10 +3,23 @@
     height: 300px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .z{
     background-image: url("../../images/z.jpg");
 }
+.s{
+    background-image: url("../../images/bannerS.jpeg");
+}
+.gt{
+    background-image: url("../../images/gt.webp");
+}
+.clasic{
+    background-image: url("../../images/DG.jpg");
+}
 .logoSaga{
-    width: 400px;
+    height: 200px;
 }
