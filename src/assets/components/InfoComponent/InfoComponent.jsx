@@ -2,14 +2,12 @@ import React from 'react'
 import "./InfoComponent.css"
 const InfoComponent = ({persona}) => {
     console.log(persona.id)
-    const raza = () =>{
-        return persona.id === 26 ? "Negro" : persona.raza;
-    };
+    
   return (
     <div className='info'>
         <div className='descrip'>
             <div>
-                Raza : {raza()}
+                Raza : {persona.raza}
             </div>
             <div>
                 Planeta : {persona.planeta}

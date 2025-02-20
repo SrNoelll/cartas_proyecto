@@ -40,7 +40,7 @@
 .barraSaga{
     width: 100vw;
     height: 80px;
-    background-color: red;
+    background-color: #f4b0c1;
 }
 /* From Uiverse.io by Smit-Prajapati */ 
 .parent {
@@ -70,8 +70,8 @@
   }
   
   .content-box {
-    background: red;
-    /* border-radius: 10px 100px 10px 10px; */
+    background: #f4b0c1;
+    border-radius: 10px;
     transition: all 0.5s ease-in-out;
     padding: 60px 25px 25px 25px;
     transform-style: preserve-3d;
@@ -110,7 +110,7 @@
     font-weight: 900;
     font-size: 9px;
     text-transform: uppercase;
-    color: red;
+    color: #f4b0c1;
     background: white;
     padding: 0.5rem 0.7rem;
     transition: all 0.5s ease-in-out;
@@ -128,7 +128,7 @@
     height: 60px;
     width: 60px;
     background: white;
-    border: 1px solid red;
+    border: 1px solid #f4b0c1;
     padding: 10px;
     transform: translate3d(0px, 0px, 80px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
@@ -140,7 +140,7 @@
   }
   
   .date-box .month {
-    color: red;
+    color: #f4b0c1;
     font-size: 9px;
     font-weight: 700;
   }
@@ -148,5 +148,5 @@
   .date-box .date {
     font-size: 20px;
     font-weight: 900;
-    color: red;
+    color: #f4b0c1;
   }
