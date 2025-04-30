@@ -16,16 +16,16 @@ const PersonajesComponent = () => {
   useEffect(() => {
     switch (saga) {
       case "1":
-        setUrl("https://www.dragonballapi.com/dragonball/");
+        setUrl("https://cors-anywhere.herokuapp.com/https://www.dragonballapi.com/dragonball/");
         break;
       case "z":
-        setUrl("https://www.dragonballapi.com/dragonballz/");
+        setUrl("https://cors-anywhere.herokuapp.com/https://www.dragonballapi.com/dragonballz/");
         break;
       case "gt":
-        setUrl("https://www.dragonballapi.com/dragonballgt/");
+        setUrl("https://cors-anywhere.herokuapp.com/https://www.dragonballapi.com/dragonballgt/");
         break;
       case "s":
-        setUrl("https://www.dragonballapi.com/dragonballsuper/");
+        setUrl("https://cors-anywhere.herokuapp.com/https://www.dragonballapi.com/dragonballsuper/");
         break;
       default:
         break;
