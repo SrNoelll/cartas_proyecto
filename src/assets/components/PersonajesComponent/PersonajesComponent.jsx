@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const PersonajesComponent = () => {
   const [saga, setSaga] = useState("1");
   const [personajesu, setPersonajesu] = useState([]);
-  const [url, setUrl] = useState("https://www.dragonballapi.com/dragonball/");
+  const [url, setUrl] = useState("https://api.allorigins.win/get?url=https://www.dragonballapi.com/dragonball/");
 
   const funcionAsn = async () => {
     const response = await fetch(url);
@@ -16,16 +16,16 @@ const PersonajesComponent = () => {
   useEffect(() => {
     switch (saga) {
       case "1":
-        setUrl("https://www.dragonballapi.com/dragonball/");
+        setUrl("https://api.allorigins.win/get?url=https://www.dragonballapi.com/dragonball/");
         break;
       case "z":
-        setUrl("https://www.dragonballapi.com/dragonballz/");
+        setUrl("https://api.allorigins.win/get?url=https://www.dragonballapi.com/dragonballz/");
         break;
       case "gt":
-        setUrl("https://www.dragonballapi.com/dragonballgt/");
+        setUrl("https://api.allorigins.win/get?url=https://www.dragonballapi.com/dragonballgt/");
         break;
       case "s":
-        setUrl("https://www.dragonballapi.com/dragonballsuper/");
+        setUrl("https://api.allorigins.win/get?url=https://www.dragonballapi.com/dragonballsuper/");
         break;
       default:
         break;
